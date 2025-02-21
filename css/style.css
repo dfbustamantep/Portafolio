@@ -1,0 +1,89 @@
+body{
+    background-color:whitesmoke;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+    
+}   
+
+header{
+    text-align: center;
+    /*background: white;*/
+    width: 100%;
+    height: 100%; 
+}
+
+/*lista*/
+nav ul{
+    /*le quitamos las viñetas*/
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+/*elemenos de la lista*/
+nav ul li{
+    float: left;
+}
+/*hipervinculos del elemento a*/
+nav ul li a{
+    /*los convertimos en bloques*/
+    display: block;
+    padding: 10px;
+    color: black;
+    /*el text decoration es para quitarle toda la decoracion que tenga*/
+    text-decoration: none;
+    
+}
+
+nav ul li a:hover{
+    background: black;
+    color: floralwhite;
+    transform: scale(1.1);
+}
+header h1{
+    color: rgb(0, 0, 0);
+}
+
+h1{
+    font-size: 30px;
+    color: black;
+}
+h3,h4{
+    font-size: 15px;
+    color: black;
+}
+main{
+    /* arriba | derecha | abajo | izquierda */
+    padding: 0 20em 0 20em;
+}
+
+img{
+    height: 30px;
+    width: 30px;
+}
+
+p{
+    font-size: large;
+}
+/*
+.proyectos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}*/
+
+.proyectos{
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+img{
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+}
+
+.proyectos:hover{
+    transform: scale(1.1);
+}
