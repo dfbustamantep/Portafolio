@@ -16,23 +16,29 @@ nav ul{
     list-style: none;
     display: flex;
     gap: 20px;
-    
+    align-items: center;
 }
 
 /*hipervinculos del elemento a*/
 nav ul li a{
     /*los convertimos en bloques*/
-    display: block;
+    display: flex;
+    align-items: center;
     padding: 10px;
     color: black;
     /*el text decoration es para quitarle toda la decoracion que tenga*/
     text-decoration: none;
-    
+}
+
+nav ul li a img {
+    height: 40px; /* Ajusta el tamaño según lo necesites */
+    width: 40px;
+    border-radius: 50%; /* Opcional para hacer la imagen circular */
 }
 
 nav ul li a:hover{
-    background: black;
-    color: floralwhite;
+    /*background: black;*/
+    /*color: floralwhite;*/
     transform: scale(1.1);
 }
 header h1{
@@ -40,6 +46,7 @@ header h1{
 }
 
 h1{
+    font-family: 'Lucida Brigth', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Geneva, Tahoma, sans-serif;
     font-size: 30px;
     color: black;
 }
@@ -91,4 +98,14 @@ img{
 
 .proyectos:hover{
     transform: scale(1.1);
+}
+
+.about-me{
+    align-items: center;
+    color: black;
+        /*el text decoration es para quitarle toda la decoracion que tenga*/
+    text-decoration: none;
+    font-size: large;
+    font-family: 'Lucida Brigth', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Geneva, Tahoma, sans-serif;
+    
 }
