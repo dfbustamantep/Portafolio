@@ -2,7 +2,6 @@ body{
     background-color:whitesmoke;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0px;
-    
 }   
 
 header{
@@ -17,6 +16,7 @@ nav ul{
     display: flex;
     gap: 20px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 /*hipervinculos del elemento a*/
@@ -28,6 +28,7 @@ nav ul li a{
     color: black;
     /*el text decoration es para quitarle toda la decoracion que tenga*/
     text-decoration: none;
+    flex-wrap: wrap;
 }
 
 nav ul li a img {
@@ -56,7 +57,9 @@ h3,h4{
 }
 main{
     /* arriba | derecha | abajo | izquierda */
-    padding: 0 20em 0 20em;
+    padding: 0 1em;
+    margin: auto;
+    max-width: 1100px;
 }
 
 img{
@@ -67,6 +70,7 @@ img{
 footer{
     display: flex;
     justify-content: right;
+    flex-wrap: wrap;
 }
 footer img{
     height: 25px;
@@ -91,9 +95,11 @@ p{
 }
 
 img{
+    max-width: 100%;
     height: 50px;
     width: 50px;
     margin: 5px;
+    height: auto;
 }
 
 .proyectos:hover{
@@ -106,6 +112,25 @@ img{
         /*el text decoration es para quitarle toda la decoracion que tenga*/
     text-decoration: none;
     font-size: large;
-    font-family: 'Lucida Brigth', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Geneva, Tahoma, sans-serif;
-    
+    font-family: 'Lucida Brigth', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Geneva, Tahoma, sans-serif;   
 }
+
+#tech-stack{
+    display: block;
+}
+
+#projects{
+    display: block;
+}
+/*Media query para que el menu se apile en celulares*/
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    footer {
+        justify-content: center;
+    }
+}
+
